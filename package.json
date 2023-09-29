@@ -1,0 +1,39 @@
+{
+  "name": "bun-postcss-plugin",
+  "description": "A Bun plugin to directly import and process CSS files with PostCSS.",
+  "version": "1.0.1",
+  "license": "MIT-0",
+  "keywords": [
+    "bun",
+    "bunjs",
+    "postcss",
+    "postcss-plugin",
+    "css",
+    "import-css",
+    "bun-plugin"
+  ],
+  "scripts": {
+    "typecheck": "bunx typescript --noEmit"
+  },
+  "module": "src/index.ts",
+  "types": "src/types.d.ts",
+  "files": [
+    "src/types.d.ts",
+    "src/index.ts",
+    "src/plugin.ts",
+    "README.md",
+    "tsconfig.json"
+  ],
+  "type": "module",
+  "target": "bun",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "postcss": "^8.4.30",
+    "postcss-load-config": "^4.0.1"
+  }
+}
